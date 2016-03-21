@@ -1,0 +1,9 @@
+[Unit]
+Description=Startup User Script
+After=syslog.target
+
+[Service]
+ExecStart=/home/root/release/startup.sh
+
+[Install]
+WantedBy=multi-user.target
